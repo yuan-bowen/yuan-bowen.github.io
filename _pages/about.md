@@ -29,14 +29,8 @@ latest_posts:
       since 2023.
     </p>
     <p>
-      My work sits between data-centric machine learning and multimodal foundation models.
-      One line of it is dataset distillation and condensation: compressing large image datasets,
-      along with the soft labels attached to them, so that a model trained on the compressed
-      version stays close to one trained on everything. The other is large vision-language models,
-      where I study the visual forgetting that appears during long-horizon reasoning and use
-      reinforcement post-training to keep attention anchored to the image. Much of this gets
-      evaluated on agricultural problems, where the imagery is noisy and a wrong recommendation
-      carries a real cost.
+      My research is on data-centric machine learning, multimodal foundation models,
+      and LLM post-training.
     </p>
   </div>
 

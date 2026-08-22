@@ -26,11 +26,8 @@ latest_posts:
       <a href="https://www.uq.edu.au/">The University of Queensland</a>, supervised by
       <a href="https://scholar.google.com/citations?user=iAWMsgEAAAAJ&amp;hl=en">Prof. Zi (Helen) Huang</a> and <a href="https://scholar.google.com/citations?user=OfTXHvsAAAAJ&amp;hl=en">Dr. Zijian Wang</a>. I completed my Bachelor of Computer Science
       with Honours Class I at UQ in 2023, and I have worked with the UQ Data Science team
-      since 2023.
-    </p>
-    <p>
-      My research is on data-centric machine learning, multimodal foundation models,
-      and LLM post-training.
+      since 2023. My research is on data-centric machine learning, multimodal foundation
+      models, and LLM post-training.
     </p>
   </div>
 

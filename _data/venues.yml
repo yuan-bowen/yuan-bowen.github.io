@@ -1,0 +1,22 @@
+# Venue badge colours, desaturated to sit on the warm paper background.
+# Keys must match the `abbr` field of the matching entry in papers.bib exactly,
+# so a new year means a new key here.
+"ECCV 2026":
+  url: https://eccv.ecva.net/
+  color: "#4f7d63"
+
+"WACV 2026":
+  url: https://wacv.thecvf.com/
+  color: "#46718f"
+
+"ACM MM 2025":
+  url: https://www.acmmm.org/
+  color: "#a8564f"
+
+"NeurIPS 2024":
+  url: https://neurips.cc/
+  color: "#6f5f9e"
+
+"ADC 2023":
+  url: https://link.springer.com/book/10.1007/978-3-031-47843-7
+  color: "#a1743c"

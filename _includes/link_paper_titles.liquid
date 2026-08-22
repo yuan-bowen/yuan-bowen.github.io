@@ -1,0 +1,53 @@
+{%- comment -%}
+  Makes each bibliography title clickable.
+
+  al_folio_core renders the title as plain text (`<div class="title">`) with no
+  link, and the only way to change that in Liquid is to shadow the gem's whole
+  411-line _layouts/bib.liquid, which then has to be re-diffed on every gem
+  upgrade. This is a new local include instead, so nothing gem-owned is
+  overridden.
+
+  The URLs are not invented here: they are read back off the link buttons the
+  layout already rendered for each entry, preferring the publisher page, then
+  the DOI, then arXiv, then the code repo. Entries with no external link keep a
+  plain title. Without JS the title still renders, just not as a link.
+{%- endcomment -%}
+<script>
+  (function () {
+    var PREFERRED = ["HTML", "DOI", "arXiv", "Code"];
+
+    function linkTitles() {
+      document.querySelectorAll(".publications .title").forEach(function (title) {
+        if (title.querySelector("a")) return;
+        var row = title.closest(".row");
+        if (!row) return;
+
+        var buttons = Array.prototype.slice.call(row.querySelectorAll("a.btn"));
+        var href = null;
+        for (var i = 0; i < PREFERRED.length && !href; i++) {
+          for (var j = 0; j < buttons.length; j++) {
+            if (buttons[j].textContent.trim() === PREFERRED[i]) {
+              href = buttons[j].getAttribute("href");
+              break;
+            }
+          }
+        }
+        if (!href) return;
+
+        var a = document.createElement("a");
+        a.setAttribute("href", href);
+        a.setAttribute("target", "_blank");
+        a.setAttribute("rel", "external nofollow noopener");
+        a.className = "title-link";
+        while (title.firstChild) a.appendChild(title.firstChild);
+        title.appendChild(a);
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", linkTitles);
+    } else {
+      linkTitles();
+    }
+  })();
+</script>

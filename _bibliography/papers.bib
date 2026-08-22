@@ -1,0 +1,75 @@
+---
+---
+
+@inproceedings{yuan2026laser,
+  abbr        = {ECCV 2026},
+  preview     = {yuan2026laser.png},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {LASER: A Corrective Lens for LVLMs via Visual Attention Preservation and Sink Suppression},
+  author      = {Yuan, Bowen and Wang, Zijian and Luo, Yadan and Wang, Shijie and Huang, Zi},
+  booktitle   = {Proceedings of the 19th European Conference on Computer Vision (ECCV)},
+  year        = {2026},
+  arxiv       = {2607.01707},
+  code        = {https://github.com/KeViNYuAn0314/LASER},
+  abstract    = {Large vision-language models (LVLMs) exhibit strong reasoning ability but suffer from visual forgetting during long-horizon decoding, where attention progressively drifts away from visual evidence. Existing methods largely treat this issue as a late-stage attention decay problem or attempt to mitigate it through heuristic reminders or post-hoc attention lifting. Through systematic empirical analysis, we find that performance degradation under visual forgetting is largely driven by two overlooked factors: early-stage attention decay disrupts evidence acquisition, and attention concentration on a subset of task-irrelevant visual sink tokens. Motivated by these insights, we propose LASER, a post-training framework that regulates both the visual attention trajectory and intra-visual token attention distribution during reasoning. Technically, LASER introduces two complementary rewards: a Visual Grounding Reward, which encourages the model to maintain attention on semantically salient visual tokens throughout decoding, and a Sink Suppression Reward, which penalizes excessive attention concentration on visual sink tokens. Together, these rewards preserve early-stage grounding while preventing attention collapse onto uninformative regions. Extensive experiments on eight benchmark datasets demonstrate that LASER consistently outperforms strong baselines, validating attention-aware training as an effective remedy for visual forgetting.}
+}
+
+@inproceedings{yuan2025wiswheat,
+  abbr        = {ACM MM 2025},
+  preview     = {yuan2025wiswheat.png},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {WisWheat: A Three-Tiered Vision-Language Dataset for Wheat Management},
+  author      = {Yuan*, Bowen and Song*, Selena and Fernandez, Javier and Luo, Yadan and Baktashmotlagh, Mahsa and Wang, Zijian},
+  booktitle   = {Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM)},
+  year        = {2025},
+  doi         = {10.1145/3746027.3758256},
+  html        = {https://dl.acm.org/doi/10.1145/3746027.3758256},
+  arxiv       = {2506.06084},
+  abstract    = {Wheat management strategies play a critical role in determining yield. Traditional management decisions often rely on labour-intensive expert inspections, which are expensive, subjective and difficult to scale. Recently, Vision-Language Models (VLMs) have emerged as a promising solution to enable scalable, data-driven management support. However, due to a lack of domain-specific knowledge, directly applying VLMs to wheat management tasks results in poor quantification and reasoning capabilities, ultimately producing vague or even misleading management recommendations. In response, we propose WisWheat, a wheat-specific dataset with a three-layered design to enhance VLM performance on wheat management tasks: (1) a foundational pretraining dataset of 47,871 image-caption pairs for coarsely adapting VLMs to wheat morphology; (2) a quantitative dataset comprising 7,263 VQA-style image-question-answer triplets for quantitative trait measuring tasks; and (3) an Instruction Fine-tuning dataset with 4,888 samples targeting biotic and abiotic stress diagnosis and management plan for different phenological stages. Extensive experimental results demonstrate that fine-tuning open-source VLMs (e.g., Qwen2.5 7B) on our dataset leads to significant performance improvements. Specifically, the Qwen2.5 VL 7B fine-tuned on our wheat instruction dataset achieves accuracy scores of 79.2% and 84.6% on wheat stress and growth stage conversation tasks respectively, surpassing even general-purpose commercial models such as GPT-4o by a margin of 11.9% and 34.6%.}
+}
+
+@inproceedings{yuan2026score,
+  abbr        = {WACV 2026},
+  preview     = {yuan2026score.png},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {SCORE: Soft Label Compression-Centric Dataset Condensation via Coding Rate Optimization},
+  author      = {Yuan*, Bowen and Fu*, Yuxia and Wang, Zijian and Luo, Yadan and Huang, Zi},
+  booktitle   = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year        = {2026},
+  arxiv       = {2503.13935},
+  code        = {https://github.com/KeViNYuAn0314/SCORE},
+  html        = {https://ieeexplore.ieee.org/document/11492031/},
+  abstract    = {Dataset Condensation (DC) aims to obtain a condensed dataset that allows models trained on the condensed dataset to achieve performance comparable to those trained on the full dataset. Recent DC approaches increasingly focus on encoding knowledge into realistic images with soft labeling, for their scalability to ImageNet-scale datasets and strong capability of cross-domain generalization. However, this strong performance comes at a substantial storage cost which could significantly exceed the storage cost of the original dataset. We argue that the three key properties to alleviate this performance-storage dilemma are informativeness, discriminativeness, and compressibility of the condensed data. Towards this end, this paper proposes a Soft label compression-centric dataset condensation framework using Coding Rate (SCORE). SCORE formulates dataset condensation as a min-max optimization problem, which aims to balance the three key properties from an information-theoretic perspective. In particular, we theoretically demonstrate that our coding rate-inspired objective function is submodular, and its optimization naturally enforces low-rank structure in the soft label set corresponding to each condensed data. Extensive experiments on large-scale datasets, including ImageNet-1K and Tiny-ImageNet, demonstrate that SCORE outperforms existing methods in most cases. Even with 30x compression of soft labels, performance decreases by only 5.5% and 2.7% for ImageNet-1K with IPC 10 and 50, respectively.}
+}
+
+@inproceedings{yuan2023vegetation,
+  abbr        = {ADC 2023},
+  bibtex_show = {true},
+  title       = {Towards Reliable and Efficient Vegetation Segmentation for Australian Wheat Data Analysis},
+  author      = {Yuan, Bowen and Wang, Zijian and Yu, Xin},
+  booktitle   = {Databases Theory and Applications (ADC), Lecture Notes in Computer Science},
+  pages       = {119--135},
+  year        = {2023},
+  publisher   = {Springer Nature Switzerland},
+  doi         = {10.1007/978-3-031-47843-7_9},
+  html        = {https://link.springer.com/chapter/10.1007/978-3-031-47843-7_9}
+}
+
+@inproceedings{yuan2024autopalette,
+  abbr        = {NeurIPS 2024},
+  preview     = {yuan2024autopalette.png},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Color-Oriented Redundancy Reduction in Dataset Distillation},
+  author      = {Yuan, Bowen and Wang, Zijian and Baktashmotlagh, Mahsa and Luo, Yadan and Huang, Zi},
+  booktitle   = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume      = {37},
+  year        = {2024},
+  arxiv       = {2411.11329},
+  code        = {https://github.com/KeViNYuAn0314/AutoPalette},
+  html        = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/5f5f7b6080dcadced61cf5d96f7c6dde-Abstract-Conference.html},
+  abstract    = {Dataset Distillation (DD) is designed to generate condensed representations of extensive image datasets, enhancing training efficiency. Despite recent advances, there remains considerable potential for improvement, particularly in addressing the notable redundancy within the color space of distilled images. In this paper, we propose AutoPalette, a framework that minimizes color redundancy at the individual image and overall dataset levels, respectively. At the image level, we employ a palette network, a specialized neural network, to dynamically allocate colors from a reduced color space to each pixel. The palette network identifies essential areas in synthetic images for model training and consequently assigns more unique colors to them. At the dataset level, we develop a color-guided initialization strategy to minimize redundancy among images. Representative images with the least replicated color patterns are selected based on the information gain. A comprehensive performance study involving various datasets and evaluation scenarios is conducted, demonstrating the superior performance of our proposed color-aware DD compared to existing DD methods.}
+}

@@ -1,0 +1,6 @@
+# Optional: link co-author names in the bibliography to their homepages.
+# Key is the lowercase last name; firstname lists every form used in papers.bib.
+#
+# "luo":
+#   - firstname: ["Yadan", "Y."]
+#     url: https://luoyadan.github.io/

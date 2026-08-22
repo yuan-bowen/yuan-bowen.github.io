@@ -16,7 +16,7 @@
 :root {
   /* Bumping the root size scales every rem the theme uses, so spacing grows
      with the text instead of staying tight around larger words. */
-  font-size: 17px;
+  font-size: 18px;
 
   --warm-bg: #faf7f1;
   --warm-surface: #fffdf9;
@@ -148,7 +148,7 @@ article h2::after {
 }
 
 article h2:first-of-type {
-  margin-top: 3rem;
+  margin-top: 1.8rem;
 }
 
 .home-section {
@@ -283,8 +283,8 @@ article .publications {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0.85rem;
+  margin-bottom: 0.35rem;
+  padding: 0.4rem 0.8rem;
   border: 1px solid var(--global-divider-color);
   border-radius: 7px;
   background-color: var(--global-card-bg-color);

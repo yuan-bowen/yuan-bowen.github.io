@@ -8,9 +8,10 @@ middle_name: # left empty on purpose: "" is truthy in Liquid
 last_name: Yuan
 contact_note: >
   Email is the fastest way to reach me.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Bowen Yuan is a PhD candidate in Computer Science at The University of Queensland,
-  working on dataset distillation, large vision-language models, and multimodal learning.
+# Single-line on purpose: this string is injected verbatim into the Schema.org
+# JSON-LD block, and a YAML folded scalar (">") leaves a trailing newline that
+# makes the JSON unparseable, so search engines silently drop the structured data.
+description: "Bowen Yuan is a PhD candidate in Computer Science at The University of Queensland, working on data-centric machine learning, dataset distillation, large vision-language models, and LLM post-training."
 footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the
   <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
